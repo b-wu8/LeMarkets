@@ -1,0 +1,55 @@
+DATABASE markets:
+TABLE markets:
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| id          | int(11)      | NO   | PRI | NULL    |       |
+| name        | varchar(255) | YES  |     | NULL    |       |
+| web         | varchar(255) | YES  |     | NULL    |       |
+| address     | varchar(255) | YES  |     | NULL    |       |
+| city        | varchar(63)  | YES  |     | NULL    |       |
+| county      | varchar(31)  | YES  |     | NULL    |       |
+| state       | varchar(31)  | YES  |     | NULL    |       |
+| zip         | int(11)      | YES  |     | NULL    |       |
+| session     | varchar(63)  | YES  |     | NULL    |       |
+| credit      | char(1)      | YES  |     | NULL    |       |
+| bake        | char(1)      | YES  |     | NULL    |       |
+| cheese      | char(1)      | YES  |     | NULL    |       |
+| crafts      | char(1)      | YES  |     | NULL    |       |
+| flowers     | char(1)      | YES  |     | NULL    |       |
+| eggs        | char(1)      | YES  |     | NULL    |       |
+| seafood     | char(1)      | YES  |     | NULL    |       |
+| herbs       | char(1)      | YES  |     | NULL    |       |
+| vegetables  | char(1)      | YES  |     | NULL    |       |
+| honey       | char(1)      | YES  |     | NULL    |       |
+| jams        | char(1)      | YES  |     | NULL    |       |
+| meat        | char(1)      | YES  |     | NULL    |       |
+| wine        | char(1)      | YES  |     | NULL    |       |
+| coffee      | char(1)      | YES  |     | NULL    |       |
+| fruits      | char(1)      | YES  |     | NULL    |       |
+| wildHarvest | char(1)      | YES  |     | NULL    |       |
+| x           | float        | YES  |     | NULL    |       |
+| y           | float        | YES  |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+27 rows in set (0.00 sec)
+
+TABLE zips:
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| zip   | int(11)     | NO   | PRI | NULL    |       |
+| x     | float       | YES  |     | NULL    |       |
+| y     | float       | YES  |     | NULL    |       |
+| city  | varchar(63) | YES  |     | NULL    |       |
+| state | varchar(31) | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+TABLE states:
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| state | varchar(31) | YES  |     | NULL    |       |
+| abb   | varchar(2)  | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)

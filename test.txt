@@ -1,0 +1,19 @@
+(1)
+Distance: 30
+ZIP: 12180
+
+(2)
+Distance: 200
+ZIP: 12180
+
+(3)
+Distance: 30
+City: New York     State: New York
+
+(4)
+Distance: 30
+State: Arizona
+
+(5)
+Distance: 500
+State: Colorado
